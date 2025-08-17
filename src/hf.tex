@@ -1,0 +1,19 @@
+% header and footer
+
+% evita il warning su headheight
+\setlength{\headheight}{14pt}
+
+\renewcommand{\headrulewidth}{0pt} % header line
+\renewcommand{\footrulewidth}{0pt}
+
+\pagestyle{fancy}
+\fancyhf{} % clean header and footer
+
+
+
+% logo a sinistra, titolo al centro, numero pagina a destra
+\fancyhead[L]{\raisebox{-0.35\height}{\includegraphics[height=12pt]{img/agesci_logo.png}}}
+\fancyhead[C]{\fontspec{Permanent Marker}\leftmark}
+\fancyhead[R]{\thepage}
+
+\fancyfoot{} % footer vuoto (puoi metterci qualcosa qui)

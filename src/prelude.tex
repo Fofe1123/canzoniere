@@ -1,0 +1,41 @@
+\usepackage[chorded]{songs}
+\usepackage{fontspec}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage[top=1cm, bottom=1cm, left=0.7cm, right=0.7cm, a5paper]{geometry}
+
+% Qui sono tutti i parametri, modificare qui
+
+% fonts
+\renewcommand{\lyricfont}{\fontspec{Comic Sans MS}}
+\renewcommand{\chorusfont}{\fontspec{Comic Sans MS Bold}}
+\renewcommand{\printchord}[1]{\fontspec{Noto Serif}#1}
+
+% chord line params
+\renewcommand{\clineparams}{
+    \baselineskip=12pt
+    \lineskiplimit=1pt
+    \lineskip=1pt
+}
+
+% % prelude
+\renewcommand{\makeprelude}{%
+    \resettitles
+    \raggedright
+    {
+        \Large\fontspec{Permanent Marker}\chapterLetter\thechapterSong\ - \songtitle\par
+            \nexttitle\foreachtitle{(\songtitle)\par}
+    }
+}
+
+\songcolumns{2}
+\songpos{3}
+\setlength{\cbarwidth}{0.5pt}
+\columnsep=0.3cm
+\noversenumbers
+\flushbottom
+\versesep=9pt plus 2pt minus 2pt
+\baselineadj=1pt plus 1pt minus 0pt
+
+\newcounter{chapterSong}
+\newcommand{\chapterLetter}{X}
