@@ -1,19 +1,29 @@
 % header and footer
 
-% evita il warning su headheight
-\setlength{\headheight}{14pt}
+\renewcommand{\headrulewidth}{1pt} % header line
+\renewcommand{\footrulewidth}{1pt}
 
-\renewcommand{\headrulewidth}{0pt} % header line
+% Impostazioni header e footer
+\setlength{\headheight}{14pt} 
+\setlength{\footskip}{20pt} % alza il footer
+
+\renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
 \pagestyle{fancy}
-\fancyhf{} % clean header and footer
+\fancyhf{}
 
-
-
-% logo a sinistra, titolo al centro, numero pagina a destra
+% Header
 \fancyhead[L]{\raisebox{-0.35\height}{\includegraphics[height=12pt]{img/agesci_logo.png}}}
 \fancyhead[C]{\fontspec{Permanent Marker}\leftmark}
 \fancyhead[R]{\thepage}
 
-\fancyfoot{} % footer vuoto (puoi metterci qualcosa qui)
+% Footer
+\fancyfoot[L]{%
+  \raisebox{-0.1\height}{\includegraphics[height=12pt]{img/agesci_logo.png}}%
+  \hspace{0.5em}%
+  \raisebox{-0.1\height}{\Large\fontspec{Permanent Marker}Canzoniere dei lupetti}%
+}
+\fancyfoot[R]{\Large\thepage}
+
+
