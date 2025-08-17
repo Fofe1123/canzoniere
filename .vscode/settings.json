@@ -1,4 +1,13 @@
 {
+	"emeraldwalk.runonsave": {
+        "commands": [
+            {
+                "match": "\\.tex$",
+                "cmd": "./gen_all_songlists.sh"
+            }
+        ]
+    },
+
 	"latex-workshop.latex.recipes": [
 		{
 			"name": "xelatex2",
