@@ -1,8 +1,8 @@
-\documentclass{book} 
-
 % documento principale, usare solo per aggiungere canzoni
 % per modificare header e footer si veda il file in src/hf.tex
 % per modificare font e altri vari parametri si veda src/prelude.tex
+
+\documentclass{book} 
 
 \input{src/prelude}
 \input{src/hf}
@@ -14,6 +14,7 @@
     % canzoni giungla
     \songchapter{Canzoni giungla}
     \renewcommand{\chapterLetter}{G}
+    \renewcommand{\headerName}{Canzoni giungla}
     \setcounter{chapterSong}{0}
 
     \stepcounter{chapterSong}\input{./src/songs/canti_giungla/attorno_alla_rupe.tex}
@@ -32,32 +33,34 @@
     % canzoni scout
     \songchapter{Canzoni scout}
     \renewcommand{\chapterLetter}{S}
+    \renewcommand{\headerName}{Canzoni scout}
     \setcounter{chapterSong}{0}
 
-    \stepcounter{chapterSong}\input{./src/songs/canti_scout/alla_fiera_est.tex}
-    \stepcounter{chapterSong}\input{./src/songs/canti_scout/arca_noe.tex}
+    \stepcounter{chapterSong}\input{./src/songs/canti_scout/insieme.tex}
+    \stepcounter{chapterSong}\input{./src/songs/canti_scout/luce_rossa.tex}
+    \stepcounter{chapterSong}\input{./src/songs/canti_scout/il_leone.tex}
+    \stepcounter{chapterSong}\input{./src/songs/canti_scout/terra_di_betulla.tex}
+    \stepcounter{chapterSong}\input{./src/songs/canti_scout/strade_pensieri.tex}
+    \stepcounter{chapterSong}\input{./src/songs/canti_scout/il_falco.tex}
+    \stepcounter{chapterSong}\input{./src/songs/canti_scout/oleanna.tex}
     \stepcounter{chapterSong}\input{./src/songs/canti_scout/canto_del_raid.tex}
-    \stepcounter{chapterSong}\input{./src/songs/canti_scout/canto_promessa.tex}
-    \stepcounter{chapterSong}\input{./src/songs/canti_scout/canzone_angioletti.tex}
-    \stepcounter{chapterSong}\input{./src/songs/canti_scout/caramba.tex}
-    \stepcounter{chapterSong}\input{./src/songs/canti_scout/cavaliere_saro.tex}
+    \stepcounter{chapterSong}\input{./src/songs/canti_scout/singin_ja.tex}
     \stepcounter{chapterSong}\input{./src/songs/canti_scout/cenerentola.tex}
+    \stepcounter{chapterSong}\input{./src/songs/canti_scout/samarcanda.tex}
+    \stepcounter{chapterSong}\input{./src/songs/canti_scout/alla_fiera_est.tex}
+    \stepcounter{chapterSong}\input{./src/songs/canti_scout/canzone_angioletti.tex}
+    \stepcounter{chapterSong}\input{./src/songs/canti_scout/arca_noe.tex}
+    \stepcounter{chapterSong}\input{./src/songs/canti_scout/pim_pam.tex}
+    \stepcounter{chapterSong}\input{./src/songs/canti_scout/la_banda_di_bp.tex}
+    \stepcounter{chapterSong}\input{./src/songs/canti_scout/primo_sole.tex}
     \stepcounter{chapterSong}\input{./src/songs/canti_scout/farewell.tex}
     \stepcounter{chapterSong}\input{./src/songs/canti_scout/gatto_volpe.tex}
-    \stepcounter{chapterSong}\input{./src/songs/canti_scout/il_falco.tex}
-    \stepcounter{chapterSong}\input{./src/songs/canti_scout/insieme.tex}
+    \stepcounter{chapterSong}\input{./src/songs/canti_scout/caramba.tex}
     \stepcounter{chapterSong}\input{./src/songs/canti_scout/in_un_mondo_di_maschere.tex}
+    \stepcounter{chapterSong}\input{./src/songs/canti_scout/cavaliere_saro.tex}
     \stepcounter{chapterSong}\input{./src/songs/canti_scout/isola_che_non_ce.tex}
-    \stepcounter{chapterSong}\input{./src/songs/canti_scout/luce_rossa.tex}
-    \stepcounter{chapterSong}\input{./src/songs/canti_scout/oleanna.tex}
-    \stepcounter{chapterSong}\input{./src/songs/canti_scout/pim_pam.tex}
-    \stepcounter{chapterSong}\input{./src/songs/canti_scout/primo_sole.tex}
-    \stepcounter{chapterSong}\input{./src/songs/canti_scout/samarcanda.tex}
-    \stepcounter{chapterSong}\input{./src/songs/canti_scout/singin_ja.tex}
-    \stepcounter{chapterSong}\input{./src/songs/canti_scout/strade_pensieri.tex}
-    \stepcounter{chapterSong}\input{./src/songs/canti_scout/terra_di_betulla.tex}
-    \stepcounter{chapterSong}\input{./src/songs/canti_scout/il_leone.tex}
-    \stepcounter{chapterSong}\input{./src/songs/canti_scout/la_banda_di_bp.tex}    
+    \stepcounter{chapterSong}\input{./src/songs/canti_scout/meridiana.tex}
+    \stepcounter{chapterSong}\input{./src/songs/canti_scout/canto_promessa.tex}
 
 \end{songs}
 

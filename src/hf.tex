@@ -5,25 +5,21 @@
 
 % Impostazioni header e footer
 \setlength{\headheight}{14pt} 
-\setlength{\footskip}{20pt} % alza il footer
+\setlength{\footskip}{35pt} % alza il footer
 
-\renewcommand{\headrulewidth}{0pt}
-\renewcommand{\footrulewidth}{0pt}
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\footrulewidth}{1pt}
 
 \pagestyle{fancy}
 \fancyhf{}
 
 % Header
-\fancyhead[L]{\raisebox{-0.35\height}{\includegraphics[height=12pt]{img/agesci_logo.png}}}
-\fancyhead[C]{\fontspec{Permanent Marker}\leftmark}
-\fancyhead[R]{\thepage}
+\fancyhead[R]{\large\fontspec{Permanent Marker}\thepage}
+\fancyhead[L]{\fontspec{Permanent Marker}\headerName}
 
 % Footer
-\fancyfoot[L]{%
-  \raisebox{-0.1\height}{\includegraphics[height=12pt]{img/agesci_logo.png}}%
-  \hspace{0.5em}%
-  \raisebox{-0.1\height}{\Large\fontspec{Permanent Marker}Canzoniere dei lupetti}%
-}
-\fancyfoot[R]{\Large\thepage}
+\fancyfoot[L]{\fontspec{Permanent Marker}Il Canzoniere dei lupetti}
+\fancyfoot[C]{\includegraphics[height=30pt]{img/agesci_logo.png}}
+\fancyfoot[R]{\fontspec{Permanent Marker}Gruppo Valeggio 1}
 
 
