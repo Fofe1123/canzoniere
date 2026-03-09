@@ -1,0 +1,64 @@
+\usepackage[chorded]{songs}
+\usepackage{fontspec}
+\usepackage{graphicx, tikz, tikzpagenodes, xcolor}
+\usepackage{fancyhdr}
+\usepackage{pgffor}
+\usepackage{geometry}
+
+% Parametri di formattazione del testo
+% per modificare header e footer si veda il file hf.tex
+
+%% margini
+\geometry{
+    a5paper,
+    top=0.5cm,        
+    bottom=1cm,     
+    left=0.5cm,     
+    right=0.5cm,
+    headheight=15pt,      % Spazio per l'header
+    footskip=15pt,        % Spazio per il logo (30pt) + margine di sicurezza
+    includeheadfoot       % Fondamentale per vedere correttamente h/f
+}
+
+%% fonts
+\newfontfamily\titlefont{Fondamento}
+\renewcommand{\lyricfont}{\fontspec{Andika}}
+\renewcommand{\chorusfont}{\fontspec{Andika-Bold}}
+\renewcommand{\printchord}[1]{\fontspec{Noto Serif}#1}
+
+% parametri di separazione testo-accordi
+\renewcommand{\clineparams}{
+    \baselineskip=5pt
+    \lineskiplimit=1pt
+    \lineskip=1pt
+}
+
+% preludio della canzone - titolo
+\renewcommand{\makeprelude}{%
+    \resettitles
+    \raggedright
+    {
+        \titlefont\Large\bfseries
+        \chapterLetter\thechapterSong\ - \MakeUppercase{\songtitle}\par
+            \nexttitle\foreachtitle{(\songtitle)\par}
+    }
+}
+
+% parametri vari
+\songcolumns{2}
+\songpos{3}
+\setlength{\cbarwidth}{0.5pt}
+\setlength{\sbarheight}{0pt}
+\columnsep=0.3cm
+\noversenumbers
+\raggedbottom
+\versesep=5pt plus 2pt minus 2pt
+\baselineadj=1pt plus 1pt minus 0pt
+\widowpenalty=10000
+\clubpenalty=10000
+\interlinepenalty=1000
+\solfedge
+
+\newcounter{chapterSong}
+\newcommand{\chapterLetter}{X}
+\newcommand{\headerName}{XXX}
