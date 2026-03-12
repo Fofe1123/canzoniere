@@ -7,14 +7,14 @@
 \pagestyle{fancy}
 \fancyhf{}
 
-% Header
+%% Header
+\fancyhead[R]{\large\titlefont\thepage}
+\fancyhead[L]{\large\titlefont\headerName}
 
-\fancyhead[R]{\large\fontspec{Noto Serif}\thepage}
-\fancyhead[L]{\fontspec{Noto Serif}\headerName}
-
+%% footer
 \fancyfoot[L]{%
     \begin{minipage}[c][30pt][c]{0.3\textwidth}
-        \fontspec{Noto Serif}\small Il Canzoniere dei lupetti
+        \titlefont Il Canzoniere dei lupetti
     \end{minipage}
 }
 
@@ -28,7 +28,7 @@
 \fancyfoot[R]{%
     \begin{minipage}[c][30pt][c]{0.3\textwidth}
         \raggedleft
-        \fontspec{Noto Serif}\small Gruppo Valeggio 1
+        \titlefont Gruppo Valeggio 1
     \end{minipage}
 }
 

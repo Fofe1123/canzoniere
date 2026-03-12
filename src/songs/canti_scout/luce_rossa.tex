@@ -1,5 +1,12 @@
 \beginsong{Luce rossa}
 
+\begin{tikzpicture}[remember picture, overlay]
+    \node[opacity=0.1, inner sep=0pt, anchor=south east] 
+    at (current page text area.south east) { % Centra l'immagine nella pagina
+        \includegraphics[width=\paperwidth]{img/cowboy.png} 
+    };
+\end{tikzpicture}
+
 \beginverse
 
 Il \[RE]sole tramonta ad \[SOL]ovest
