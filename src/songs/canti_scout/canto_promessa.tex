@@ -1,5 +1,19 @@
 \beginsong{Il canto della promessa}
 
+\begin{tikzpicture}[remember picture, overlay]
+    \node[inner sep=0pt, anchor=south east] 
+    at ([yshift=0.7cm]current page text area.south east) { % Centra l'immagine nella pagina
+        \includegraphics[width=0.8\paperwidth]{img/promessa.png} 
+    };
+\end{tikzpicture}
+
+\begin{tikzpicture}[remember picture, overlay]
+    \node[inner sep=0pt, anchor=north east] 
+    at ([yshift=-0.7cm]current page text area.north east) { % Centra l'immagine nella pagina
+        \includegraphics[width=0.12\paperwidth]{img/saluto.png} 
+    };
+\end{tikzpicture}
+
 \beginverse
 
 \[RE]Dinnanzi a voi mi impegno 

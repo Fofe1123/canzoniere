@@ -1,5 +1,19 @@
-
 \beginsong{Un bravo lupo}
+
+\begin{tikzpicture}[remember picture, overlay]
+    \node[inner sep=0pt, anchor=south east] 
+    at ([yshift=0.7cm]current page text area.south east) { % Centra l'immagine nella pagina
+        \includegraphics[width=0.45\paperwidth]{img/kaa.png} 
+    };
+\end{tikzpicture}
+
+\begin{tikzpicture}[remember picture, overlay]
+    \node[opacity=0.15,inner sep=0pt, anchor=center, rotate=90, xscale=-1, yscale=-1] 
+    at ([xshift=-2cm,yshift=2cm]current page text area.center) {
+        \includegraphics[width=0.8\paperwidth]{img/ulula.png} 
+    };
+\end{tikzpicture}
+
 \beginchorus
     \[LA]Un bravo lupo io \[RE]voglio diventar \\
     \[MI]E la promessa per \[LA]sempre rispettar \\

@@ -1,25 +1,34 @@
-% header and footer
+%% margini e geometria della pagina
 
-\renewcommand{\headrulewidth}{1pt} % header line
-\renewcommand{\footrulewidth}{1pt}
-
-% Impostazioni header e footer
-\setlength{\headheight}{14pt} 
-\setlength{\footskip}{35pt} % alza il footer
-
-\renewcommand{\headrulewidth}{1pt}
-\renewcommand{\footrulewidth}{1pt}
+%%  header and foote
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0.5pt}
 
 \pagestyle{fancy}
 \fancyhf{}
 
-% Header
-\fancyhead[R]{\large\fontspec{Permanent Marker}\thepage}
-\fancyhead[L]{\fontspec{Permanent Marker}\headerName}
+%% Header
+\fancyhead[R]{\large\titlefont\thepage}
+\fancyhead[L]{\large\titlefont\headerName}
 
-% Footer
-\fancyfoot[L]{\fontspec{Permanent Marker}Il Canzoniere dei lupetti}
-\fancyfoot[C]{\includegraphics[height=30pt]{img/agesci_logo.png}}
-\fancyfoot[R]{\fontspec{Permanent Marker}Gruppo Valeggio 1}
+%% footer
+\fancyfoot[L]{%
+    \begin{minipage}[c][30pt][c]{0.3\textwidth}
+        \titlefont Il Canzoniere dei lupetti
+    \end{minipage}
+}
 
+\fancyfoot[C]{%
+    \begin{minipage}[c][30pt][c]{0.3\textwidth}
+        \centering
+        \includegraphics[height=30pt]{img/LogoValeggio1.png}
+    \end{minipage}
+}
+
+\fancyfoot[R]{%
+    \begin{minipage}[c][30pt][c]{0.3\textwidth}
+        \raggedleft
+        \titlefont Gruppo Valeggio 1
+    \end{minipage}
+}
 
